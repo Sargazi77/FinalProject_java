@@ -16,7 +16,7 @@ public class GameDB {
         }
     }
     public void addDate(GameData gamedata) {
-        String insertSql = "INSERT INTO gameesult values (?,?)";
+        String insertSql = "INSERT INTO gameresult values (?,?)";
         try (Connection connection = DriverManager.getConnection(databasePath);
              PreparedStatement preparedStatement = connection.prepareStatement(insertSql)){
 
