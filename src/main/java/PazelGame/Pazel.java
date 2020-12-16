@@ -101,7 +101,7 @@ public class Pazel extends JFrame {
         boolean[] shuffeled = new boolean[16];;
         for (int i = 0; i < 4; i++) { //4 culoms
             for (int j = 0; j < 4; j++) { //4 rows
-                int val = (int) ( 4 *Math.random()); //Default random method only generates between 0 and 1
+                int val = (int) ( 16 *Math.random()); //Default random method only generates between 0 and 1
 //                System.out.println(val);               // so we need to multiply that by 16 to get 16 numbers.
                 while (shuffeled[val]) {               //In line 120; 16 represents the maximum of the number we need (0-16)
                     val = (int) (16 * Math.random());   // and in line 123, 16 represents the number of random numbers we need.
